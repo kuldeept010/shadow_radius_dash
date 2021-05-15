@@ -1,0 +1,55 @@
+//global theme options
+$primary: #005dff;
+$seconary: #ff9900;
+$background: #f2f2f3;
+
+//property variables
+$font-family: "Poppins", sans-serif;
+$shadow: 0px 3px 6px #00000029;
+
+//color lighten and darken
+$primaryHover: lighten($primary, 10%);
+
+//margin and padding
+@for $i from 1 to 16 {
+  .mt-#{$i},
+  .my-#{$i},
+  .ma-#{$i} {
+    margin-top: $i * 5px;
+  }
+  .mb-#{$i},
+  .my-#{$i},
+  .ma-#{$i} {
+    margin-bottom: $i * 5px;
+  }
+  .mr-#{$i},
+  .mx-#{$i},
+  .ma-#{$i} {
+    margin-right: $i * 5px;
+  }
+  .ml-#{$i},
+  .mx-#{$i},
+  .ma-#{$i} {
+    margin-left: $i * 5px;
+  }
+  .pt-#{$i},
+  .py-#{$i},
+  .pa-#{$i} {
+    padding-top: $i * 5px;
+  }
+  .pb-#{$i},
+  .py-#{$i},
+  .pa-#{$i} {
+    padding-bottom: $i * 5px;
+  }
+  .pr-#{$i},
+  .px-#{$i},
+  .pa-#{$i} {
+    padding-right: $i * 5px;
+  }
+  .pl-#{$i},
+  .px-#{$i},
+  .pa-#{$i} {
+    padding-left: $i * 5px;
+  }
+}

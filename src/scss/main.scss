@@ -1,0 +1,17 @@
+@import './_variables.scss';
+@import './iconly.scss';
+
+*{
+  margin: 0px;
+}
+
+body{
+  background-color: $background;
+}
+
+$sides: center, left, right;
+@each $side in $sides {
+  .text-#{$side} {
+    text-align: $side;
+  }
+}
