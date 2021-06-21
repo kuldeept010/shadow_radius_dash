@@ -1,5 +1,11 @@
 <template>
-  <button :class="{ large: large, medium: medium }" :disabled="disabled" @click="emitClick()">
+  <button
+    ref="button"
+    :class="{ large: large, medium: medium, outlined: outlined }"
+    class="color-red"
+    :disabled="disabled"
+    @click="emitClick()"
+  >
     <slot></slot>
   </button>
 </template>
@@ -21,12 +27,28 @@ export default {
       type: Boolean,
       default: false,
     },
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
+    color: {
+      type: String,
+      default: "white",
+    },
+    dark: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  mounted() {
+    // console.log(this.$refs.button.getProperty('class'))
+    this.$refs.button.style.setProperty("background", "#ffffff80");
   },
   methods: {
     emitClick() {
-      this.$emit('click');
-    }
-  }
+      this.$emit("click");
+    },
+  },
 };
 </script>
 
@@ -34,8 +56,8 @@ export default {
 button {
   margin: 0px auto;
   border-radius: 10px 5px 10px 5px;
-  background: $primary;
-  color: #fff;
+  // background: $white;
+  color: #000;
   padding: 8px 16px;
   border: 0.25px solid #70707080;
   cursor: pointer;
@@ -51,20 +73,25 @@ button {
     font-size: 16px;
     padding: 10px 24px;
   }
-  &.outlined {
-    background: transparent;
-    color: #000;
+
+  &.color-#{ds} {
+    background: #{ds};
   }
   &:hover {
-    backdrop-filter: opacity(0.3);
+    // backdrop-filter: opacity(0.3);
     background: #fff;
-    border-color: $primary;
-    color: $primary;
+    border: 0.25px solid #000000;
+    // color: $primary;
   }
-}
-button:focus,
-button:active {
-  border-color: $primary;
-  outline: none;
+
+  &.outlined {
+    background: $white;
+
+    &:hover {
+      background: #fff;
+      border-color: $primary;
+      color: $primary;
+    }
+  }
 }
 </style>

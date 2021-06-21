@@ -1,27 +1,32 @@
 <template>
-  <span :class="icon"></span>
-  <span id="slot">
-    <slot></slot>
-  </span>
+  <span v-if="icon != ''" :class="icon" class="icon" />
 </template>
 
 <script>
 export default {
-  data: () => ({
-    icon: "",
-  }),
-  mounted() {
-    this.icon = this.$slots.default()[0].el.data
-    document.getElementById("slot").innerHTML = ""
+  props: {
+    icon: {
+      type: String,
+    },
+    size: {
+      type: String,
+      default: "md-icon",
+    },
+  },
+  computed: {
+    classes: function () {
+      var cls = [];
+
+      cls.push(this.icon);
+      cls.push("icon");
+      cls.push("size");
+
+      return cls.join(" ");
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.k{
-  display: none;
-}
-span{
-  font-size: 14px;
-}
+// @import url('../scss/iconly.scss');
 </style>

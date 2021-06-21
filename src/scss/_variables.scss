@@ -10,6 +10,14 @@ $shadow: 0px 3px 6px #00000029;
 //color lighten and darken
 $primaryHover: lighten($primary, 10%);
 
+//colors
+$white: #ffffff;
+$black: #000000;
+$red: #ff0000;
+$green: #00ff00;
+$blue: #0000ff;
+$yellow: #ffff00;
+
 //margin and padding
 @for $i from 1 to 16 {
   .mt-#{$i},
@@ -51,5 +59,12 @@ $primaryHover: lighten($primary, 10%);
   .px-#{$i},
   .pa-#{$i} {
     padding-left: $i * 5px;
+  }
+}
+
+//flex columns
+@for $i from 0 to 12 {
+  .col-#{$i} {
+    flex: $i;
   }
 }

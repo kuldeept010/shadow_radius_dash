@@ -8,15 +8,11 @@
           border-radius.
         </div>
       </div>
-      <div class="links">
-        <sr-button @click="goToAttributions()" class="mx-3">
-          Attributions</sr-button
-        >
-        <sr-button @click="goToComponents()" class="mx-3">
-          Components</sr-button
-        >
-        <sr-button @click="goToDashboard()" class="mx-3">
-          Dashboard <sr-icon>iconly-Search</sr-icon></sr-button
+      <div class="row py-4">
+        <sr-button @click="goToAttributions()"> Attributions</sr-button>
+        <sr-button @click="goToComponents()"> Components</sr-button>
+        <sr-button @click="goToDashboard()">
+          Dashboard <sr-icon>iconly-Discovery</sr-icon></sr-button
         >
       </div>
     </div>

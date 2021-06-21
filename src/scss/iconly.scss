@@ -3,12 +3,11 @@
   font-family: 'iconly';
   font-style: normal;
 	font-weight: 200;
-  src:  url('../assets/fonts/Iconly-light.eot');
-  src: url('../assets/fonts/Iconly-light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-  url('../assets/fonts/Iconly-light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-  url('../assets/fonts/Iconly-light.ttf') format('truetype'),
-      url('../assets/fonts/Iconly-light.svg#Iconly-light') format('svg');
-  
+  src:  url('/fonts/Iconly-light.eot');
+  src: url('/fonts/Iconly-light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+  url('/fonts/Iconly-light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('/fonts/Iconly-light.ttf') format('truetype'),
+      url('/fonts/Iconly-light.svg#Iconly-light') format('svg');
 }
 
 [class^="iconly-"], [class*="iconly-"] {

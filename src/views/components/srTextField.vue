@@ -17,7 +17,7 @@ export default {
     inputValue: "",
     label: "Name",
     placeholder: "Enter your name",
-    icon: "iconly-Search"
+    icon: "iconly-Search",
   }),
 };
 </script>

@@ -1,0 +1,29 @@
+// Attributions for the whole project.
+{
+  //icons
+  "icons": [
+    {
+      "type": "icon",
+      "name": "Iconly",
+      "usage": "Icon Library",
+      "img": "@/assets/img/piqo-design.webp",
+      "attr-link": "<a href='https://piqo.design/gumroad'>600+ Free icons for your next project in 5 styles (Light, Bold, Bulk, Two-tone, Broken) - https://piqo.design</a>",
+      "user-link": "https://www.figma.com/@piqodesign",
+      "srcName": "Piqo Design",
+      "srcAddress": "https://piqo.design"
+    }
+  ],
+  //images
+  "images": [
+    {
+      "type": "image",
+      "name": "diana.grytsku",
+      "img": "@/assets/img/dashboard-navbar-avatar.png",
+      "attr-link": "<a href='https://www.freepik.com/photos/fashion'>Fashion photo created by diana.grytsku - www.freepik.com</a>",
+      "user-link": "https://www.freepik.com/diana-grytsku",
+      "usage": "Dashboard Navbar Avatar",
+      "srcName": "Freepik",
+      "srcAddress": "https://www.freepik.com"
+    }
+  ]
+}
